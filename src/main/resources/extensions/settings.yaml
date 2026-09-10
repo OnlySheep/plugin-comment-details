@@ -14,7 +14,7 @@ spec:
         - $formkit: select
           name: locationFormat
           label: 优先展示层级
-          value: city
+          value: region
           options:
             - label: 城市
               value: city

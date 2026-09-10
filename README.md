@@ -1,35 +1,21 @@
-# comment-details
-
-comment-details - Halo 插件
+# 更多评论细节
 
 ## 简介
 
-这是一个基于 Halo 的插件项目。
+一款可以显示更多评论细节的插件
 
-## 开发环境
+![img.png](img.png)
+## 运行环境
 
-- Java 21+
-- Node.js >=22.12.0
-- pnpm
+Halo >= 2.25.0
 
-## 开发
+评论组件 PluginCommentWidget（必需） >=3.2.2
 
-```bash
-# 启用插件
-./gradlew haloServer
-# 开发前端
-cd ui
-pnpm install
-pnpm dev
+## 使用
+
 ```
-
-## 构建
-
-```bash
-./gradlew build
+下载 plugin-comment-details-x.x.x.jar，在 Console「插件」页上传安装并启用；
 ```
-
-构建完成后，可以在 `build/libs` 目录找到插件 jar 文件。
 
 ## 许可证
 
