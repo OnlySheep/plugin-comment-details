@@ -1,0 +1,242 @@
+# Halo 文档
+
+## 使用指南
+
+- [使用指南](https://docs.halo.run/guide/index.md): Halo 使用指南总览，涵盖部署前准备、多种安装方式、首次初始化、文章发布、站点功能配置、问题反馈以及从 Halo 1.x 迁移等内容。
+- [写在前面](https://docs.halo.run/guide/prepare.md): 了解 Halo、发行版本、应用生态，以及部署前所需的软硬件环境。
+- [在线体验](https://docs.halo.run/guide/demo.md): 通过 Halo 演示环境体验站点前台和管理后台。
+- [安装 Halo](https://docs.halo.run/guide/install/index.md): 在 Docker、Docker Compose、1Panel、宝塔面板、Helm、Podman 或 JAR 环境中部署 Halo，并完成数据库、反向代理和运行参数配置。
+- [使用 Docker Compose 部署](https://docs.halo.run/guide/install/docker-compose.md): 使用 Docker Compose 部署 Halo：推荐方式、compose 配置与持久化卷说明。
+- [使用 Docker 部署](https://docs.halo.run/guide/install/docker.md): 使用 Docker 单容器运行 Halo：镜像、端口映射与数据目录挂载要点。
+- [使用 1Panel 部署](https://docs.halo.run/guide/install/1panel.md): 通过 1Panel 安装 Halo：应用商店或容器方式部署与访问说明。
+- [使用宝塔面板部署](https://docs.halo.run/guide/install/bt-panel.md): 通过宝塔面板部署 Halo：环境要求、站点与反向代理配置说明。
+- [使用 Helm 部署](https://docs.halo.run/guide/install/helm.md): 使用 Helm Chart 在 Kubernetes 集群中安装与升级 Halo 的说明。
+- [使用 Podman 部署](https://docs.halo.run/guide/install/podman.md): 使用 Podman 运行 Halo：与 Docker 类似的容器部署与持久化说明。
+- [使用 JAR 文件部署](https://docs.halo.run/guide/install/jar-file.md): 使用 JAR 与 Java 运行 Halo：数据库要求、启动参数与生产环境建议。
+- [使用离线包部署](https://docs.halo.run/guide/install/offline.md): 在无公网或受限网络环境使用离线包部署 Halo 的步骤说明。
+- [配置说明](https://docs.halo.run/guide/install/config.md): Halo 运行时配置：环境变量、端口、数据库连接与工作目录等说明。
+- [云平台](https://docs.halo.run/guide/install/cloud/index.md): 通过阿里云云市场、阿里云计算巢和腾讯云轻量应用服务器快速部署 Halo，了解各云平台镜像、实例购买、初始化与访问流程。
+- [阿里云计算巢部署](https://docs.halo.run/guide/install/cloud/alibaba-cloud-computenest.md): 通过阿里云计算巢服务部署与管理 Halo 实例的说明。
+- [阿里云云市场部署](https://docs.halo.run/guide/install/cloud/alibaba-cloud-market.md): 使用阿里云云市场 Halo 镜像快速创建实例与初始化说明。
+- [腾讯云轻量应用模板](https://docs.halo.run/guide/install/cloud/tencent-cloud-lighthouse.md): 腾讯云轻量应用服务器应用模板一键部署 Halo 的步骤说明。
+- [其他指南](https://docs.halo.run/guide/install/other/index.md): 为已部署的 Halo 配置 Traefik 或 Nginx Proxy Manager 反向代理，完成域名转发、HTTPS 路由与 SSL 证书管理。
+- [Nginx Proxy Manager 反向代理](https://docs.halo.run/guide/install/other/nginxproxymanager.md): 使用 Nginx Proxy Manager 为 Halo 配置域名转发与 SSL 证书说明。
+- [Traefik 反向代理](https://docs.halo.run/guide/install/other/traefik.md): Traefik 为 Halo 提供反向代理与 HTTPS 的路由与证书配置说明。
+- [初始化](https://docs.halo.run/guide/setup.md): Halo 首次初始化向导：站点标题、管理员用户名、邮箱与密码设置说明。
+- [第一篇文章](https://docs.halo.run/guide/first-post.md): Halo 安装后写第一篇文章：进入控制台、编辑发布、分类标签与前台访问。
+- [常用模块](https://docs.halo.run/guide/use/index.md): Halo 基础功能操作总览，涵盖文章、页面、附件、菜单、主题、插件、应用市场、用户权限、站点设置及备份恢复。
+- [概念说明](https://docs.halo.run/guide/use/common.md): Halo 建站入门：登录注册、控制台、角色分类与站点基础概念说明。
+- [仪表盘](https://docs.halo.run/guide/use/dashboard.md): Halo Console 仪表盘的组件添加、布局调整与设备尺寸配置说明。
+- [许可证激活](https://docs.halo.run/guide/use/activate.md): Halo 付费版许可证购买、部署与激活流程，含专业版与商城版说明。
+- [个人中心](https://docs.halo.run/guide/use/user-center.md): Halo 个人中心（/uc）：资料、认证方式与会话及与 Console 的入口说明。
+- [文章](https://docs.halo.run/guide/use/posts.md): Halo 文章编辑发布：编辑器、分类标签、定时发布与回收站等操作。
+- [页面](https://docs.halo.run/guide/use/pages.md): Halo 自定义页面：关于页、联系页等独立页面与别名 URL 访问说明。
+- [评论](https://docs.halo.run/guide/use/comments.md): Halo 评论管理：筛选、审核、回复、批量操作与删除说明。
+- [附件](https://docs.halo.run/guide/use/attachments.md): Halo 附件与存储策略：本地上传、策略管理及对象存储等扩展方式。
+- [菜单](https://docs.halo.run/guide/use/menus.md): Halo 网站导航菜单：多菜单组、主菜单、菜单项与排序配置说明。
+- [主题](https://docs.halo.run/guide/use/themes.md): Halo 主题安装与切换、应用市场获取及模板与站点变量配置说明。
+- [插件](https://docs.halo.run/guide/use/plugins.md): Halo 插件安装、启用与卸载，及应用市场等获取渠道的管理指南。
+- [应用市场](https://docs.halo.run/guide/use/app-store.md): 在 Console 内置应用市场安装 Halo 主题与插件，含账号绑定与更新说明。
+- [用户与权限](https://docs.halo.run/guide/use/users.md): Halo 用户与 RBAC：多用户、角色权限、密码与会话等管理说明。
+- [站点设置](https://docs.halo.run/guide/use/settings.md): Halo 站点设置：基本信息、文章展示、评论、用户与 SEO 等控制台项。
+- [备份与恢复](https://docs.halo.run/guide/use/backup.md): Halo 控制台一键备份与恢复全站数据，含异步任务与商城版注意事项。
+- [移动端 App](https://docs.halo.run/guide/use/mobile-app.md): 将 Halo 付费版站点绑定到移动端 App，并管理和撤销设备认证。
+- [商城模块](https://docs.halo.run/guide/shop/index.md): Halo 商城版功能概览：开店、商品、支付发货与前台路由等用户指南索引。
+- [写在前面](https://docs.halo.run/guide/shop/prepare.md): 启用 Halo 商城前：商城版安装激活、合规资质与支付宝/微信支付准备。
+- [控制台首页](https://docs.halo.run/guide/shop/console-home.md): Halo 商城控制台首页：运营数据、指引与商店信息一览说明。
+- [商店设置](https://docs.halo.run/guide/shop/settings.md): 配置 Halo 商城的联系方式、询价跳转、小程序首页内容和订单号生成规则。
+- [支付方式](https://docs.halo.run/guide/shop/payments.md): Halo 商城支付：支付宝、微信、Stripe、易支付及手动收款等方式配置。
+- [销售渠道](https://docs.halo.run/guide/shop/sales-channels.md): Halo 商城销售渠道：区分终端与支付绑定，创建与管理渠道说明。
+- [产品管理](https://docs.halo.run/guide/shop/products.md): Halo 商城产品：查询和创建产品，管理分类、属性模板、定价、库存与规格。
+- [营销](https://docs.halo.run/guide/shop/marketing.md): 使用 Halo 商城的折扣和优惠券功能设置活动规则、使用限制与发放范围。
+- [订单管理](https://docs.halo.run/guide/shop/orders.md): Halo 商城订单：查看详情、填写物流发货与订单处理操作说明。
+- [商城客户中心](https://docs.halo.run/guide/shop/customer-center.md): Halo 商城顾客在个人中心管理收货地址、优惠券和订单的操作说明。
+- [虚拟交付](https://docs.halo.run/guide/shop/virtual-delivery.md): Halo 商城虚拟商品：文件下载与卡密交付的配置及发货流程说明。
+- [Webhook](https://docs.halo.run/guide/shop/webhooks.md): 配置 Halo 商城 Webhook，并正确验签、去重和处理订单、支付与发货事件。
+- [小程序](https://docs.halo.run/guide/shop/mp.md): Halo 商城小程序的获取、配置与发布说明。
+- [商城主题开发](https://docs.halo.run/guide/shop/theme-dev.md): Halo 商城页面主题定制：内置模板、示例主题仓库与二次开发参考。
+- [常见问题](https://docs.halo.run/guide/faq.md): Halo 使用常见问题：产品定位、数据库结构、找回密码与故障排查。
+- [问题反馈](https://docs.halo.run/guide/contribution/issue.md): 通过 GitHub Issue、Discussion 或 Halo 官方社区反馈使用问题、缺陷和功能需求，包含提交前搜索、选择类型及填写模板等建议。
+- [代码贡献](https://docs.halo.run/guide/contribution/pr.md): 参与 Halo 代码贡献的完整流程，涵盖查找并认领 Good First Issue、Fork 与同步仓库、创建分支、提交代码、发起及更新 Pull Request。
+- [从 Halo 1.x 迁移](https://docs.halo.run/guide/migrate-from-1.x.md): Halo 1.5/1.6 迁移至 2.x：官方迁移插件、主题兼容与数据备份注意事项。
+- [参与贡献](https://docs.halo.run/guide/contribution/index.md): 参与 Halo 开源项目的完整指南，涵盖通过 GitHub 提交问题反馈、寻找适合的 Issue、编写代码并发起 Pull Request 的流程与规范。
+
+## 开发者指南
+
+- [开发者指南](https://docs.halo.run/developer-guide/index.md): Halo 开发者指南入口，涵盖核心系统、插件与主题开发、RESTful API、应用市场发布，以及 FormKit 表单和模型元数据扩展。
+- [系统开发](https://docs.halo.run/developer-guide/core/index.md): 涵盖 Halo 核心系统的开发环境准备、本地运行、可执行 JAR 与 Docker 镜像构建，以及基于 Spring Boot、WebFlux 和 Extension 的架构概念。
+- [准备工作](https://docs.halo.run/developer-guide/core/prepare.md): 准备 Halo 核心开发环境，列出 OpenJDK、Node.js、pnpm、IntelliJ IDEA、Git 等工具要求，并说明工作目录及数据、主题、插件、附件和日志结构。
+- [开发环境运行](https://docs.halo.run/developer-guide/core/run.md): 在本地完整运行 Halo 开发环境，涵盖克隆仓库、安装并启动 Console 与 UC 前端、配置 IntelliJ IDEA Profile，以及使用 Gradle 启动后端。
+- [构建](https://docs.halo.run/developer-guide/core/build.md): 克隆 Halo 源码并使用 Gradle 构建可执行 Fat JAR，再基于构建产物创建带指定版本标签的 Docker 镜像，包含版本设置、制品路径与部署文档入口
+- [Halo 架构概览](https://docs.halo.run/developer-guide/core/framework.md): 概览 Halo 基于 Spring Boot、WebFlux、Reactor 和 R2DBC 的响应式架构，以及 Extension、Controller、资源生命周期、配置模型与 RBAC 等核心概念。
+- [插件开发](https://docs.halo.run/developer-guide/plugin/index.md): 系统了解 Halo 插件开发流程，从环境准备、项目结构和基础 API 到扩展点、插件交互、安全权限及完整案例实践
+- [介绍](https://docs.halo.run/developer-guide/plugin/introduction.md): 认识 Halo 的可插拔架构、按需安装与卸载机制以及插件开发接口，了解插件如何以低耦合方式扩展系统功能并保持模块可维护性
+- [准备工作](https://docs.halo.run/developer-guide/plugin/prepare.md): 准备 Halo 插件开发所需的 Java、Spring Boot、Vue、TypeScript、Node.js、包管理器与 Git 环境
+- [AI 辅助](https://docs.halo.run/developer-guide/plugin/ai.md): 向 AI 提供 Halo 插件开发文档，或安装官方 Agent Skill，获取插件结构、后端、前端、权限、DevTools 与 OpenAPI 开发上下文
+- [入门](https://docs.halo.run/developer-guide/plugin/hello-world.md): 使用 create-halo-plugin 创建首个 Halo 插件项目，通过 DevTools 或本地 Halo 加载、运行和调试插件，并了解后续开发入口
+- [案例和最佳实践](https://docs.halo.run/developer-guide/plugin/examples/index.md): 通过 Todo List 完整案例串联 Halo 插件的自定义模型、控制器、服务端逻辑与管理端 UI 开发，并总结可复用的最佳实践
+- [Todo List](https://docs.halo.run/developer-guide/plugin/examples/todolist.md): 从自定义模型、自动生成的 API Client 到 Console 页面，开发一个可持久化的 Halo Todo List 插件
+- [基础](https://docs.halo.run/developer-guide/plugin/basics/index.md): 掌握 Halo 插件项目结构、清单注册、开发工具，以及服务端生命周期、对象管理和管理端 UI 的入口与构建流程
+- [插件项目结构](https://docs.halo.run/developer-guide/plugin/basics/structure.md): 认识 Halo 插件项目的 Java 后端、Vue 前端、plugin.yaml 描述文件与 Gradle 构建结构，明确源码、静态资源和 UI 构建产物的存放位置
+- [插件注册和配置](https://docs.halo.run/developer-guide/plugin/basics/manifest.md): 配置 Halo 插件的 plugin.yaml 清单字段、版本要求、插件依赖和设置资源，并选择 deployment 或 development 运行模式。
+- [DevTools](https://docs.halo.run/developer-guide/plugin/basics/devtools.md): 使用 Halo DevTools 的 haloServer、watch、reloadPlugin、API Client 与角色模板生成任务运行、热重载和调试插件
+- [服务端基础](https://docs.halo.run/developer-guide/plugin/basics/server/index.md): 理解 Halo 插件服务端的生命周期与对象管理方式，正确注册、获取和销毁 Spring Bean 等插件运行期对象
+- [生命周期](https://docs.halo.run/developer-guide/plugin/basics/server/lifecycle.md): 理解 Halo 插件的启动、停止和删除生命周期，区分运行时资源、预置资源与持久化业务数据的清理边界
+- [插件中的对象管理](https://docs.halo.run/developer-guide/plugin/basics/server/object-management.md): 使用 Spring Bean 与依赖注入管理 Halo 插件对象，并调用自定义模型、用户、通知、内容、认证、限流和系统信息等共享服务
+- [响应式服务端开发](https://docs.halo.run/developer-guide/plugin/basics/server/reactive-development.md): 在 Halo 插件的 WebFlux 调用链中使用 Mono、Flux 和 WebClient，并安全隔离必须调用的阻塞 API
+- [数据存储](https://docs.halo.run/developer-guide/plugin/basics/server/data-storage.md): 根据数据用途为 Halo 插件选择自定义模型、插件配置、本地文件或缓存，并明确备份、多副本和升级责任
+- [定时任务](https://docs.halo.run/developer-guide/plugin/basics/server/scheduled-tasks.md): 在 Halo 插件中使用 Spring 的 @Scheduled 执行定时任务，并了解其与插件生命周期、Reconciler 的关系
+- [日志](https://docs.halo.run/developer-guide/plugin/basics/server/logging.md): 在 Halo 插件中使用 SLF4J 输出参数化日志，选择合适的日志级别，并通过 application.yaml、Docker 或面板调整和查看生产日志
+- [UI 基础](https://docs.halo.run/developer-guide/plugin/basics/ui/index.md): 搭建 Halo 插件管理端 UI，了解前端项目结构、入口文件注册机制、依赖配置及生产构建和资源打包流程
+- [介绍](https://docs.halo.run/developer-guide/plugin/basics/ui/intro.md): 认识 Halo 插件 UI 的用途与开发基础，使用 Vue 3、TypeScript、Node.js 和 pnpm 为 Console 控制台及 UC 个人中心添加页面和功能扩展
+- [入口文件](https://docs.halo.run/developer-guide/plugin/basics/ui/entry.md): 使用 definePlugin 编写 Halo 插件唯一的 UI 源码入口，通过 PluginModule 注册 FormKit 输入、全局组件、Console 与 UC 路由和扩展点
+- [插件设置与表单组件](https://docs.halo.run/developer-guide/plugin/basics/ui/forms.md): 使用 Setting YAML 定义 Halo 插件设置，并在 Console 和用户中心 UI 中复用 FormKit、SearchInput、VEntity 等宿主能力
+- [构建](https://docs.halo.run/developer-guide/plugin/basics/ui/build.md): 使用 ui-plugin-bundler-kit 的 Vite 或 Rsbuild 预配置构建 Halo 插件 UI，选择 ESM 或 IIFE 输出并正确打包共享依赖、清单和异步资源
+- [API 参考](https://docs.halo.run/developer-guide/plugin/api-reference/index.md): 汇总 Halo 插件服务端与管理端 UI API，涵盖自定义模型、控制器、配置读取、路由、请求工具及通用组件的使用方式
+- [服务端 API 参考](https://docs.halo.run/developer-guide/plugin/api-reference/server/index.md): 查阅 Halo 插件服务端 API，掌握自定义模型与控制器、ExtensionClient、插件配置、通知、WebSocket 和主题数据扩展
+- [自定义模型](https://docs.halo.run/developer-guide/plugin/api-reference/server/extension.md): 定义、注册和校验 Halo 自定义模型，配置索引，并使用自动生成的 API 查询资源
+- [自定义 API](https://docs.halo.run/developer-guide/plugin/api-reference/server/custom-endpoints.md): 使用 CustomEndpoint 或 ApiVersion 为 Halo 插件提供响应式业务 API，并配置作用域、校验、权限和 OpenAPI 文档
+- [编写控制器](https://docs.halo.run/developer-guide/plugin/api-reference/server/reconciler.md): 实现 Reconciler 和 ControllerBuilder，为自定义模型构建幂等调谐循环，配置事件匹配、启动同步、重试策略、状态回写与 Finalizers 清理逻辑
+- [与自定义模型交互](https://docs.halo.run/developer-guide/plugin/api-reference/server/extension-client.md): 使用 ExtensionClient 和 ReactiveExtensionClient 增删改查自定义模型，并通过 ListOptions、Queries、Sort 和 PageRequest 构建查询、排序与分页条件
+- [获取插件配置](https://docs.halo.run/developer-guide/plugin/api-reference/server/setting-fetcher.md): 使用 SettingFetcher 或 ReactiveSettingFetcher 读取并缓存插件 Setting 配置，并监听 PluginConfigUpdatedEvent 响应配置变更
+- [静态资源代理](https://docs.halo.run/developer-guide/plugin/api-reference/server/reverseproxy.md): 通过 ReverseProxy 自定义模型将插件 src/main/resources 下的静态文件代理到 /plugins/{plugin-name}/assets 路径
+- [发送和订阅通知](https://docs.halo.run/developer-guide/plugin/api-reference/server/notification.md): 使用 ReasonType、Reason 和 NotificationTemplate 定义通知事件与模板，通过 NotificationReasonEmitter 触发事件并用 NotificationCenter 管理订阅
+- [为主题提供数据](https://docs.halo.run/developer-guide/plugin/api-reference/server/finder-for-theme.md): 在 Halo 插件中定义带 @Finder 注解的响应式数据查询接口，为 Thymeleaf 主题模板提供自定义模型及其他插件数据，并避免名称冲突。
+- [在插件中提供主题模板](https://docs.halo.run/developer-guide/plugin/api-reference/server/template-for-theme.md): 在 Halo 插件中提供主题可覆盖的 Thymeleaf 模板与路由，复用当前主题页面布局，并通过插件模板路径组织和引用公共模板片段
+- [实现 WebSocket](https://docs.halo.run/developer-guide/plugin/api-reference/server/websocket.md): 从 Halo 2.15.0 起在插件中实现 WebSocketEndpoint，注册受权限控制的 WebSocket API，并随插件生命周期自动加载和卸载。
+- [登录增强](https://docs.halo.run/developer-guide/plugin/api-reference/server/login-handler-enhancer.md): 在插件的认证流程中调用 LoginHandlerEnhancer，将登录成功与失败事件交给 Halo 统一处理记住我、设备管理和登录日志等安全逻辑
+- [获取扩展](https://docs.halo.run/developer-guide/plugin/api-reference/server/extension-getter.md): 使用 ExtensionGetter 按扩展点类型获取单实例、多实例或全部扩展，并理解系统配置、Halo 默认实现与已启用插件实现之间的选择规则
+- [UI API 参考](https://docs.halo.run/developer-guide/plugin/api-reference/ui/index.md): 查阅 Halo 插件管理端 UI API，掌握路由注册、API 请求、FormKit 扩展、共享工具库及常用控制台组件的用法
+- [路由定义](https://docs.halo.run/developer-guide/plugin/api-reference/ui/route.md): 在 Halo 插件中使用 routes 和 ucRoutes 为 Console 控制台及 UC 个人中心注册 Vue Router 路由，并配置父路由、菜单、权限和移动端显示
+- [API 请求](https://docs.halo.run/developer-guide/plugin/api-reference/ui/api-request.md): 在 Halo 插件 UI 中优先使用 OpenAPI 生成的插件客户端和 @halo-dev/api-client，仅在无法生成的一次性接口中直接使用 axiosInstance
+- [FormKit 扩展](https://docs.halo.run/developer-guide/plugin/api-reference/ui/formkit.md): 在 Halo 2.25.0 及以上版本中通过插件 UI 入口注册自定义 FormKit 输入组件，并在 FormKit Schema 中使用，了解懒加载与类型名称冲突限制
+- [共享工具库](https://docs.halo.run/developer-guide/plugin/api-reference/ui/shared.md): 使用 Halo 2.22.0 起提供的 @halo-dev/ui-shared 共享工具库，获取用户、站点和 UI Provider 状态，并调用日期、权限及附件等通用工具
+- [组件](https://docs.halo.run/developer-guide/plugin/api-reference/ui/components/index.md): 在 Halo 插件 UI 中安装并使用基础组件库，以及直接调用 Console 和 UC 全局注册的业务组件与指令来扩展管理界面功能
+- [UppyUpload](https://docs.halo.run/developer-guide/plugin/api-reference/ui/components/uppy-upload.md): 使用 UppyUpload 向指定 API 端点上传文件，配置请求方法、元数据、文件限制和弹窗尺寸，并处理上传成功与错误事件
+- [FilterDropdown](https://docs.halo.run/developer-guide/plugin/api-reference/ui/components/filter-dropdown.md): 使用 FilterDropdown 构建通用下拉筛选器，通过包含标签和值的选项列表渲染菜单，并使用 v-model 读取和更新当前筛选值
+- [FilterCleanButton](https://docs.halo.run/developer-guide/plugin/api-reference/ui/components/filter-clean-button.md): 使用 FilterCleanButton 为 Halo 插件的筛选界面提供统一的清除操作入口，并通过点击事件重置当前页面已经应用的过滤条件
+- [AnnotationsForm](https://docs.halo.run/developer-guide/plugin/api-reference/ui/components/annotations-form.md): 使用 AnnotationsForm 根据自定义模型的 group 和 kind 自动渲染元数据表单，提交并校验自定义注解与规范表单数据后合并结果
+- [AttachmentFileTypeIcon](https://docs.halo.run/developer-guide/plugin/api-reference/ui/components/attachment-file-type-icon.md): 使用 AttachmentFileTypeIcon 根据附件文件名显示对应的类型图标，可通过 displayExt 控制扩展名展示并设置图标宽度和高度
+- [AttachmentSelectorModal](https://docs.halo.run/developer-guide/plugin/api-reference/ui/components/attachment-selector-modal.md): 在 Halo Console 中使用 AttachmentSelectorModal 打开附件选择器，限制可接受的文件类型与选择数量，并处理可见状态、关闭和选择事件
+- [HasPermission](https://docs.halo.run/developer-guide/plugin/api-reference/ui/components/has-permission.md): 使用 HasPermission 组件声明界面元素所需的权限列表，仅向具备相应 UI 权限的当前用户渲染按钮、菜单或其他插槽内容
+- [SearchInput](https://docs.halo.run/developer-guide/plugin/api-reference/ui/components/search-input.md): 使用 SearchInput 为 Halo 插件页面提供关键词搜索输入框，通过 v-model 绑定查询文本，并在用户按下回车后再触发搜索以减少无效请求
+- [PluginDetailModal](https://docs.halo.run/developer-guide/plugin/api-reference/ui/components/plugin-detail-modal.md): 使用 PluginDetailModal 在当前操作流程中打开指定插件的详情与设置弹窗，通过 plugin.yaml 中的插件名称定位内容并处理关闭事件
+- [VCodemirror](https://docs.halo.run/developer-guide/plugin/api-reference/ui/components/v-codemirror.md): 使用 VCodemirror 在 Halo 插件界面嵌入代码编辑器，通过 v-model 管理内容，并配置编辑语言、高度、扩展和变更事件
+- [v-tooltip](https://docs.halo.run/developer-guide/plugin/api-reference/ui/components/v-tooltip.md): 使用 v-tooltip 指令为 Halo 插件界面中的任意元素添加简短提示文字，在用户悬停或聚焦图标、按钮等控件时说明其用途
+- [v-permission](https://docs.halo.run/developer-guide/plugin/api-reference/ui/components/v-permission.md): 使用 v-permission 指令为单个界面元素声明所需权限列表，根据当前用户的 UI 权限自动控制按钮或其他操作元素的显示与隐藏
+- [扩展点和定制化](https://docs.halo.run/developer-guide/plugin/extension-points/index.md): 查阅 Halo 插件服务端与管理端 UI 扩展点，定制认证、存储、搜索、通知、主题处理及控制台页面和操作入口
+- [服务端扩展点](https://docs.halo.run/developer-guide/plugin/extension-points/server/index.md): 理解 Halo 服务端扩展点与扩展的关系，通过实现接口、注册 Spring Bean 并声明 ExtensionDefinition 资源接入可组合的后端能力
+- [Web 过滤器](https://docs.halo.run/developer-guide/plugin/extension-points/server/additional-webfilter.md): 实现 AdditionalWebFilter 在 Halo 处理 Web 请求前后执行认证、授权、重定向或请求修改，并通过 getOrder 控制扩展执行顺序
+- [认证安全过滤器](https://docs.halo.run/developer-guide/plugin/extension-points/server/authentication-webfilter.md): 提供 Security WebFilter 扩展点，插件可实现自定义认证逻辑，例如：用户名密码认证，JWT 认证，匿名认证。
+- [附件存储](https://docs.halo.run/developer-guide/plugin/extension-points/server/attachment.md): 实现 AttachmentHandler 扩展 Halo 附件的上传、删除、共享链接、永久链接和缩略图能力，并注册 attachment-handler 扩展定义
+- [评论主体展示](https://docs.halo.run/developer-guide/plugin/extension-points/server/comment-subject.md): 实现 CommentSubject 获取自定义评论主体及其标题、链接和类型信息，并配合 UI 扩展在 Halo 评论列表中展示来源
+- [评论组件](https://docs.halo.run/developer-guide/plugin/extension-points/server/comment-widget.md): 实现单实例 CommentWidget 扩展点处理主题模板中的 halo:comment 标签，以自定义评论组件的前台渲染内容
+- [元素标签后置处理器](https://docs.halo.run/developer-guide/plugin/extension-points/server/element-tag-post-processor.md): 实现 ElementTagPostProcessor 对 Thymeleaf 元素标签执行响应式后置处理，并通过模型工厂返回修改后的不可变标签
+- [摘要生成器](https://docs.halo.run/developer-guide/plugin/extension-points/server/excerpt-generator.md): 实现单实例 ExcerptGenerator，根据原始内容、HTML、关键词和最大长度生成 Halo 文章或页面摘要，并替换默认纯文本截取逻辑
+- [搜索文档提供者](https://docs.halo.run/developer-guide/plugin/extension-points/server/halo-documents-provider.md): 实现 HaloDocumentsProvider 扩展点，为 Halo 搜索引擎返回文章、页面等可索引文档及类型标识，并注册对应的多实例扩展定义
+- [通知器](https://docs.halo.run/developer-guide/plugin/extension-points/server/notifier.md): 实现 ReactiveNotifier 扩展点并声明 NotifierDescriptor，为 Halo 添加邮件、短信或 WebHook 通知方式，配置发送者与接收者参数。
+- [搜索引擎](https://docs.halo.run/developer-guide/plugin/extension-points/server/search-engine.md): 实现单实例 SearchEngine 扩展 Halo 搜索文档的增删、清空和查询能力，并按发布状态、类型、作者、分类或标签过滤结果
+- [主题端 HTML Head 标签处理](https://docs.halo.run/developer-guide/plugin/extension-points/server/template-head-processor.md): 实现多实例 TemplateHeadProcessor 修改主题页面的 head 元素，按 Spring Order 顺序注入元数据、脚本、样式或链接标签
+- [主题端 Halo Footer 标签处理](https://docs.halo.run/developer-guide/plugin/extension-points/server/template-footer-processor.md): 实现多实例 TemplateFooterProcessor 处理主题的 halo:footer 标签，在页脚模型中注入统计脚本、插件资源或其他 HTML 内容
+- [主题端文章内容处理](https://docs.halo.run/developer-guide/plugin/extension-points/server/post-content.md): 实现 ReactivePostContentHandler 依次处理主题端文章的 HTML 与原始内容，并将更新后的 PostContentContext 传给后续处理器
+- [主题端自定义页面内容处理](https://docs.halo.run/developer-guide/plugin/extension-points/server/singlepage-content.md): 实现 ReactiveSinglePageContentHandler 依次处理主题端独立页面内容，并将更新后的 SinglePageContentContext 传给后续处理器
+- [用户创建处理器](https://docs.halo.run/developer-guide/plugin/extension-points/server/user-creating-handler.md): 实现 UserPreCreatingHandler 和 UserPostCreatingHandler，在 Halo 用户创建前修改属性或校验数据，并在创建成功后执行后续逻辑
+- [用户名密码认证管理器](https://docs.halo.run/developer-guide/plugin/extension-points/server/username-password-authentication-manager.md): 实现 UsernamePasswordAuthenticationManager 单实例扩展点，用 LDAP 等第三方身份验证服务替换 Halo 默认的用户名密码认证逻辑
+- [UI 扩展点](https://docs.halo.run/developer-guide/plugin/extension-points/ui/index.md): 使用 Halo UI 扩展点在 Console 控制台和 UC 个人中心接入插件功能，定位可用的界面扩展接口并选择对应实现方式
+- [附件选择选项卡](https://docs.halo.run/developer-guide/plugin/extension-points/ui/attachment-selector-create.md): 使用 attachment:selector:create 为 Halo 附件选择器添加自定义选项卡，通过 AttachmentLike 和 selected 双向绑定接入贴纸库或第三方素材源
+- [编辑器集成](https://docs.halo.run/developer-guide/plugin/extension-points/ui/editor-create.md): 使用 editor:create 为 Halo 文章编辑页注册独立编辑器，实现标题、原始内容和渲染内容的双向更新，并复用内置图片上传能力
+- [插件详情选项卡](https://docs.halo.run/developer-guide/plugin/extension-points/ui/plugin-self-tabs-create.md): 使用 plugin:self:tabs:create 为当前插件的 Halo Console 详情页添加自定义选项卡，配置 Vue 面板与权限，并在组件中注入当前 Plugin 数据
+- [默认编辑器](https://docs.halo.run/developer-guide/plugin/extension-points/ui/default-editor-extension-create.md): 使用 default:editor:extension:create 注册 Tiptap 扩展，为 Halo 默认编辑器添加工具栏、工具箱、Slash Command、悬浮菜单和拖拽菜单功能
+- [评论来源显示](https://docs.halo.run/developer-guide/plugin/extension-points/ui/comment-subject-ref-create.md): 使用 comment:subject-ref:create 为插件自定义业务模型解析评论来源，在 Halo Console 评论列表中显示来源类型、标题及站内或外部跳转链接
+- [替换评论编辑器](https://docs.halo.run/developer-guide/plugin/extension-points/ui/comment-editor-replace.md): 使用 comment:editor:replace 扩展点替换 Halo Console 中的默认评论和回复编辑器
+- [替换评论内容显示](https://docs.halo.run/developer-guide/plugin/extension-points/ui/comment-list-item-content-replace.md): 使用 comment:list-item:content:replace 扩展点替换 Halo Console 中的评论和回复内容显示组件
+- [备份页面选项卡](https://docs.halo.run/developer-guide/plugin/extension-points/ui/backup-tabs-create.md): 使用 backup:tabs:create 扩展 Halo Console 备份页面选项卡，注册带权限控制的 Vue 面板，用于实现定时备份设置或第三方云存储配置。
+- [插件安装界面选项卡](https://docs.halo.run/developer-guide/plugin/extension-points/ui/plugin-installation-tabs-create.md): 使用 plugin:installation:tabs:create 为 Halo Console 插件安装界面添加自定义选项卡，配置 Vue 面板、属性、权限和排序以接入新的安装来源
+- [主题管理界面选项卡](https://docs.halo.run/developer-guide/plugin/extension-points/ui/theme-list-tabs-create.md): 使用 theme:list:tabs:create 为 Halo Console 主题管理界面添加自定义选项卡，配置 Vue 面板、属性、权限和排序以接入新的主题安装来源
+- [文章数据列表操作菜单](https://docs.halo.run/developer-guide/plugin/extension-points/ui/post-list-item-operation-create.md): 使用 post:list-item:operation:create 向 Halo Console 文章列表添加自定义操作菜单，读取当前 ListedPost 并配置权限、显隐条件与处理动作
+- [页面数据列表操作菜单](https://docs.halo.run/developer-guide/plugin/extension-points/ui/single-page-list-item-operation-create.md): 使用 single-page:list-item:operation:create 向 Halo Console 页面列表添加自定义操作菜单，读取当前 ListedSinglePage 并配置权限、显隐条件与处理动作
+- [评论数据列表操作菜单](https://docs.halo.run/developer-guide/plugin/extension-points/ui/comment-list-item-operation-create.md): 使用 comment:list-item:operation:create 向 Halo Console 评论列表添加自定义操作菜单，读取当前 ListedComment 并配置权限、显隐条件与处理动作
+- [回复数据列表操作菜单](https://docs.halo.run/developer-guide/plugin/extension-points/ui/reply-list-item-operation-create.md): 使用 reply:list-item:operation:create 向 Halo Console 回复列表添加自定义操作菜单，读取当前 ListedReply 并配置权限、显隐条件与处理动作
+- [插件数据列表操作菜单](https://docs.halo.run/developer-guide/plugin/extension-points/ui/plugin-list-item-operation-create.md): 使用 plugin:list-item:operation:create 向 Halo Console 插件列表添加自定义操作菜单，读取当前 Plugin 并配置组件、权限、显隐条件和处理动作
+- [备份数据列表操作菜单](https://docs.halo.run/developer-guide/plugin/extension-points/ui/backup-list-item-operation-create.md): 使用 backup:list-item:operation:create 向 Halo Console 备份列表添加自定义操作菜单，通过 OperationItem 配置组件、权限、显隐条件和操作逻辑
+- [附件数据列表操作菜单](https://docs.halo.run/developer-guide/plugin/extension-points/ui/attachment-list-item-operation-create.md): 使用 attachment:list-item:operation:create 向 Halo Console 附件列表添加自定义操作菜单，按权限或状态控制显示并处理当前附件
+- [主题数据列表操作菜单](https://docs.halo.run/developer-guide/plugin/extension-points/ui/theme-list-item-operation-create.md): 使用 theme:list-item:operation:create 向 Halo Console 主题列表添加自定义操作菜单，读取当前 Theme 并配置权限、显隐条件和处理动作
+- [插件数据列表显示字段](https://docs.halo.run/developer-guide/plugin/extension-points/ui/plugin-list-item-field-create.md): 使用 plugin:list-item:field:create 在 Halo Console 插件列表中添加自定义显示字段，根据当前 Plugin 配置位置、组件、权限和显隐条件
+- [文章数据列表显示字段](https://docs.halo.run/developer-guide/plugin/extension-points/ui/post-list-item-field-create.md): 使用 post:list-item:field:create 在 Halo Console 文章列表中添加自定义显示字段，根据当前 ListedPost 配置位置、组件、权限和显隐条件
+- [页面数据列表显示字段](https://docs.halo.run/developer-guide/plugin/extension-points/ui/single-page-list-item-field-create.md): 使用 single-page:list-item:field:create 在 Halo Console 页面列表中添加自定义显示字段，根据当前 ListedSinglePage 配置位置、组件、权限和显隐条件
+- [用户详情选项卡](https://docs.halo.run/developer-guide/plugin/extension-points/ui/user-detail-tabs-create.md): 使用 user:detail:tabs:create 为 Halo Console 用户详情页添加自定义选项卡，配置 Vue 面板和排序，并通过 user 属性读取所查看的用户信息
+- [个人资料选项卡](https://docs.halo.run/developer-guide/plugin/extension-points/ui/uc-user-profile-tabs-create.md): 使用 uc:user:profile:tabs:create 为 Halo UC 个人资料页添加自定义选项卡，配置 Vue 面板和排序，并通过 user 属性读取当前登录用户信息
+- [仪表盘扩展点](https://docs.halo.run/developer-guide/plugin/extension-points/ui/dashboard-widgets.md): 从 Halo 2.21.0 起使用仪表盘 UI 扩展点注册自定义小部件和快捷操作，配置组件、表单、默认尺寸、权限及编辑和预览状态
+- [与其他插件交互](https://docs.halo.run/developer-guide/plugin/interaction/index.md): 实现 Halo 插件之间的协作，配置插件依赖、通过事件总线共享数据，并设计可供其他插件接入的稳定扩展点与接口
+- [依赖其他插件](https://docs.halo.run/developer-guide/plugin/interaction/dependency.md): 在 plugin.yaml 中声明 Halo 插件的必需、可选和版本依赖，并了解依赖检查与加载边界
+- [发布共享 Java API](https://docs.halo.run/developer-guide/plugin/interaction/shared-java-api.md): 将 Halo 插件的稳定 Java 接口拆分为独立 Gradle 模块，供其他插件以 compileOnly 方式引用
+- [事件共享](https://docs.halo.run/developer-guide/plugin/interaction/shared-events.md): 通过 Spring ApplicationEvent、SharedEvent 和 EventListener 在 Halo 与插件之间发布和订阅共享事件，并正确处理插件类加载依赖
+- [插件如何被扩展](https://docs.halo.run/developer-guide/plugin/interaction/making-plugin-extensible.md): 为 Halo 插件定义继承 ExtensionPoint 的扩展接口，声明 ExtensionPointDefinition，并使用 ExtensionGetter 查找和调用已启用实现
+- [与主题集成](https://docs.halo.run/developer-guide/plugin/theme-integration.md): 按场景选择 Finder、可覆盖模板、页面布局、公开 API、静态资源和主题端扩展点，并定义稳定的插件主题契约
+- [安全和权限管理](https://docs.halo.run/developer-guide/plugin/security/index.md): 为 Halo 插件配置安全与权限管理，使用 RBAC、角色模板和 UI 权限控制保护服务端 API 与管理端功能入口
+- [基于角色的权限控制](https://docs.halo.run/developer-guide/plugin/security/rbac.md): 使用 Halo 的 Role、RoleBinding 和角色模板构建 RBAC 权限体系，并通过依赖、聚合与隐藏标签控制权限继承和内置角色扩展
+- [API 权限控制](https://docs.halo.run/developer-guide/plugin/security/role-template.md): 为 Halo 插件的资源型和非资源型 API 定义 Role 角色模板，配置 apiGroups、resources、verbs、依赖关系与 UI 权限
+- [UI 权限控制](https://docs.halo.run/developer-guide/plugin/security/ui-permission.md): 通过角色模板的 ui-permissions 注解声明 Halo 插件前端权限，并在路由、菜单和组件中使用 permissions 或 HasPermission 控制界面可见操作
+- [敏感数据与出站请求](https://docs.halo.run/developer-guide/plugin/security/outbound-http.md): 使用 Halo Secret 保存插件密钥，并为 WebClient 出站请求防范 SSRF、凭据泄漏、危险重定向和配置读取失败时的意外开放
+- [测试插件](https://docs.halo.run/developer-guide/plugin/testing.md): 使用 Gradle、插件 UI 检查和本地 Halo 环境验证插件后端、前端、兼容性及生命周期行为
+- [常见问题](https://docs.halo.run/developer-guide/plugin/faq.md): 插件开发中常见问题的排查方法，包括插件启动失败、UI 扩展不加载、依赖冲突与热重载失效
+- [插件发布验收清单](https://docs.halo.run/developer-guide/plugin/release-checklist.md): 在发布 Halo 插件前验证 Gradle 构建、JAR 内容、版本信息、安装升级、生命周期和 CI/CD 流程
+- [API 变更日志](https://docs.halo.run/developer-guide/plugin/api-changelog.md): 按 Halo 版本查阅插件服务端 API、UI 构建工具、表单组件和依赖升级等变更，识别兼容性影响并完成插件迁移
+- [主题开发](https://docs.halo.run/developer-guide/theme/index.md): 涵盖 Halo 主题开发的环境准备、配置与目录结构、页面布局、静态资源、设置表单、模板变量、Finder API、图片优化和 UI 扩展。
+- [准备工作](https://docs.halo.run/developer-guide/theme/prepare.md): 搭建 Halo 主题本地开发环境，从模板创建包含 theme.yaml 和 Thymeleaf 页面模板的项目，安装并启用主题以预览页面效果
+- [AI 辅助](https://docs.halo.run/developer-guide/theme/ai.md): 向 AI 提供 Halo 主题开发文档，或安装官方 Agent Skill，获取主题结构、Thymeleaf、Finder API、静态资源与设置表单开发上下文
+- [目录结构](https://docs.halo.run/developer-guide/theme/structure.md): 了解 Halo 主题项目的标准目录结构，以及模板、静态资源、主题配置、设置表单、预览图和 Console、用户中心 UI 扩展各自的存放位置
+- [配置文件](https://docs.halo.run/developer-guide/theme/config.md): 配置 Halo 主题的 theme.yaml，说明主题标识、作者、版本、兼容要求、设置项、自定义模板与许可证等字段，并介绍重载和旧版迁移方法
+- [Thymeleaf 模板语法](https://docs.halo.run/developer-guide/theme/thymeleaf.md): 在 Halo 的 Spring WebFlux 环境中使用 Thymeleaf 3.1，掌握表达式、条件、遍历、片段、空值处理和安全的 JavaScript 内联方式
+- [静态资源](https://docs.halo.run/developer-guide/theme/static-resources.md): 在 Halo 主题中通过 Thymeleaf 资源链接和 theme.assets() API 引用 templates/assets 下的样式、脚本与图片
+- [设置选项](https://docs.halo.run/developer-guide/theme/settings.md): 通过 settings.yaml 和 FormKit 表单定义 Halo 主题设置项，关联 Setting 与 ConfigMap，并在 Thymeleaf 模板中读取配置和重载更新
+- [主题附带资源](https://docs.halo.run/developer-guide/theme/extension-resources.md): 在 Halo 主题根目录提供 AnnotationSetting、NotificationTemplate、Setting 和 ConfigMap，并了解加载白名单与清理边界
+- [国际化](https://docs.halo.run/developer-guide/theme/i18n.md): 为 Halo 主题提供 properties 国际化资源，并在 Thymeleaf 模板和 JavaScript 中安全使用本地化消息
+- [模板路由](https://docs.halo.run/developer-guide/theme/template-route-mapping.md): 了解 Halo 内置首页、文章、页面、归档、分类、标签和作者模板的默认路由与分页规则，并通过 theme.yaml 为文章、页面和分类声明自定义模板。
+- [全局变量](https://docs.halo.run/developer-guide/theme/global-variables.md): 在 Halo Thymeleaf 模板中使用 site 与 theme 全局变量、#halo.matchVersion 版本判断、Spring Security 条件渲染及自动访问量统计。
+- [模板编写](https://docs.halo.run/developer-guide/theme/template-variables/index.md): 介绍 Halo 主题中首页、文章、单页面、归档、分类、标签、作者、认证和错误页面的模板路径、访问路由、可用变量及渲染示例。
+- [首页](https://docs.halo.run/developer-guide/theme/template-variables/home.md): 编写 Halo 主题的 index.html 首页模板，使用 posts 分页变量渲染最新文章列表、上下页链接，并了解首页路由与模板标识
+- [文章](https://docs.halo.run/developer-guide/theme/template-variables/post.md): 编写 Halo 主题的 post.html 文章详情模板，使用 post 变量渲染标题与正文，并通过 theme.yaml 为文章声明可选的自定义模板。
+- [单页面](https://docs.halo.run/developer-guide/theme/template-variables/page.md): 编写 Halo 主题的 page.html 单页面模板，使用 singlePage 变量渲染标题和正文，并通过 theme.yaml 定义可供用户选择的自定义页面模板
+- [文章归档](https://docs.halo.run/developer-guide/theme/template-variables/archives.md): 编写 Halo 主题的 archives.html 文章归档模板，使用 archives 分页变量按年份和月份组织文章，并了解归档路由、分页链接与模板标识。
+- [文章标签集合](https://docs.halo.run/developer-guide/theme/template-variables/tags.md): 编写 Halo 主题的 tags.html 标签集合模板，使用 tags 变量读取全部文章标签并渲染标签墙，同时了解页面路由和模板标识
+- [标签归档](https://docs.halo.run/developer-guide/theme/template-variables/tag.md): 编写 Halo 主题的 tag.html 标签归档模板，使用 tag 与 posts 变量展示标签信息和分页文章列表，并了解默认访问路由、模板标识及相关类型定义。
+- [文章分类集合](https://docs.halo.run/developer-guide/theme/template-variables/categories.md): 编写 Halo 主题的 categories.html 分类集合模板，使用 categories 变量递归渲染多层文章分类树，并了解页面路由、模板标识与 CategoryTreeVo 类型。
+- [分类归档](https://docs.halo.run/developer-guide/theme/template-variables/category.md): 编写 Halo 主题的 category.html 分类归档模板，使用 category 与 posts 变量渲染分类信息和分页文章，并通过 theme.yaml 声明分类自定义模板。
+- [作者归档](https://docs.halo.run/developer-guide/theme/template-variables/author.md): 编写 Halo 主题的 author.html 作者归档模板，使用 author 与 posts 变量展示作者信息和分页文章列表，并了解默认路由与模板标识。
+- [认证页面](https://docs.halo.run/developer-guide/theme/template-variables/auth.md): 通过覆盖 Halo 内置 Thymeleaf 模板，自定义登录、注册、退出、密码重置与两步验证页面，并复用认证流程的布局、脚本和基础资源
+- [错误页面](https://docs.halo.run/developer-guide/theme/template-variables/error.md): 配置 Halo 主题的 404、4xx、500、5xx 与默认错误模板，了解状态码对应的模板匹配顺序及 error 变量字段和渲染方式
+- [Finder API](https://docs.halo.run/developer-guide/theme/finder-apis/index.md): 汇总 Halo 主题可用的 Finder API，帮助在任意 Thymeleaf 模板位置查询文章、分类、标签、菜单、评论、主题与站点统计等数据。
+- [文章分类](https://docs.halo.run/developer-guide/theme/finder-apis/category.md): 使用 CategoryFinder 按唯一标识查询单个或多个文章分类，分页或完整列出分类，并获取分类树、父分类与面包屑导航数据。
+- [文章标签](https://docs.halo.run/developer-guide/theme/finder-apis/tag.md): 使用 TagFinder 按唯一标识批量查询文章标签、分页获取标签列表或读取全部标签，并在 Thymeleaf 模板中渲染标签链接
+- [文章](https://docs.halo.run/developer-guide/theme/finder-apis/post.md): 使用 PostFinder 查询文章、正文、上下篇导航、随机文章和分页列表，按分类、标签、作者与置顶状态筛选，并获取按年月组织的文章归档
+- [独立页面](https://docs.halo.run/developer-guide/theme/finder-apis/single-page.md): 使用 SinglePageFinder 按唯一标识查询独立页面及正文内容，或分页获取页面列表，并在 Thymeleaf 模板中渲染 SinglePageVo 数据。
+- [评论](https://docs.halo.run/developer-guide/theme/finder-apis/comment.md): 使用 CommentFinder 按名称查询评论、按内容引用分页获取评论列表，并查询指定评论的回复，包含 CommentVo、ReplyVo 和 Ref 类型定义
+- [作者](https://docs.halo.run/developer-guide/theme/finder-apis/contributor.md): 使用 ContributorFinder 按 metadata.name 查询单个或多个作者，并在 Thymeleaf 模板中读取 ContributorVo 的显示名称等作者信息。
+- [导航菜单](https://docs.halo.run/developer-guide/theme/finder-apis/menu.md): 使用 MenuFinder 按唯一标识查询导航菜单或获取站点主菜单，并通过 Thymeleaf 遍历 MenuVo 与 MenuItemVo 渲染菜单链接
+- [站点统计](https://docs.halo.run/developer-guide/theme/finder-apis/site-stats.md): 使用 SiteStatsFinder 获取站点访问、点赞、评论、文章和分类数量，并在 Thymeleaf 模板中通过 SiteStatsVo 渲染统计信息。
+- [主题](https://docs.halo.run/developer-guide/theme/finder-apis/theme.md): 使用 ThemeFinder 获取当前启用的 Halo 主题或按唯一标识查询主题，并读取主题版本、作者、设置、自定义模板等 ThemeVo 信息
+- [插件](https://docs.halo.run/developer-guide/theme/finder-apis/plugin.md): 使用 PluginFinder 检查指定 Halo 插件是否已启动，或进一步按 Semantic Version 版本范围判断插件是否可用
+- [自定义标签](https://docs.halo.run/developer-guide/theme/template-tag.md): 在 Halo Thymeleaf 模板中使用 halo:comment 提供文章或独立页面评论扩展点，并通过 halo:footer 注入系统设置中的页脚代码。
+- [模型元数据](https://docs.halo.run/developer-guide/theme/annotations.md): 介绍 Halo 主题模板的 annotations 表达式对象，演示获取模型元数据、设置默认值及判断 annotations 字段是否存在。
+- [使用 Vite 开发主题](https://docs.halo.run/developer-guide/theme/vite.md): 使用 @halo-dev/vite-plugin-halo-theme 在 src 中开发 Halo 主题，并生成 templates 模板与静态资源
+- [与插件集成](https://docs.halo.run/developer-guide/theme/plugin-integration.md): 在 Halo 主题中检查可用插件、保护插件专属调用，并为评论、页脚注入和插件页面保留兼容扩展点
+- [页面布局契约](https://docs.halo.run/developer-guide/theme/page-layout.md): 从 Halo 2.26.0 起在 templates/layout.html 声明 html(head, content) 布局片段，让插件前台页面复用主题页头、页脚和样式，并理解兼容状态与回退规则
+- [UI 扩展](https://docs.halo.run/developer-guide/theme/ui-plugin.md): 从 Halo 2.26.0 起复用 PluginModule 契约为主题添加 Console 和 UC 界面扩展，使用 Vite 或 Rsbuild 构建 ESM/IIFE 产物并正确打包共享依赖与静态资源
+- [主题调试与测试](https://docs.halo.run/developer-guide/theme/testing.md): 在主题开发过程中定位 Thymeleaf、路由、静态资源和集成问题，并用页面状态矩阵验证主题行为
+- [图片优化](https://docs.halo.run/developer-guide/theme/image-optimization.md): 从 Halo 2.19 起在主题中使用 thumbnail.gen Finder API 和缩略图 HTTP API 生成多尺寸图片，并结合 srcset 与 sizes 实现响应式加载和带宽优化。
+- [性能最佳实践](https://docs.halo.run/developer-guide/theme/performance.md): 从静态资源加载、Finder 调用、分页和图片处理几个方面优化 Halo 主题的前台性能
+- [主题 SEO](https://docs.halo.run/developer-guide/theme/seo.md): 了解 Halo 自动注入的 SEO 元数据，并为主题页面设置标题、规范链接和社交分享信息
+- [构建与打包](https://docs.halo.run/developer-guide/theme/packaging.md): 使用 @halo-dev/theme-package-cli 将 Halo 主题的模板、配置、国际化资源和 UI 扩展打包为可安装 ZIP
+- [主题发布验收清单](https://docs.halo.run/developer-guide/theme/release-checklist.md): 在发布 Halo 主题前验证构建产物、安装升级、页面模板、设置、插件兼容性和浏览器表现
+- [API 变更日志](https://docs.halo.run/developer-guide/theme/api-changelog.md): 按 Halo 版本记录主题开发 API 的新增与变更，涵盖 UI 扩展、页面布局契约、Finder API、FormKit 表单组件和模板表达式，便于判断兼容范围并完成适配
+- [RESTful API](https://docs.halo.run/developer-guide/restful-api/index.md): 介绍 Halo RESTful API 的认证与调用方式，以及使用 @halo-dev/api-client 访问 Core、Console、UC 和 Public API 的方法。
+- [介绍](https://docs.halo.run/developer-guide/restful-api/introduction.md): 查阅 Halo Core、Console、UC、Public 与 Aggregated RESTful API，使用个人令牌或 Basic Auth 完成认证，并通过 cURL 或 Axios 发起请求
+- [API Client 请求库](https://docs.halo.run/developer-guide/restful-api/api-client.md): 从 Halo 2.17.0 起使用 @halo-dev/api-client 调用 Core、Console、UC 与 Public API，掌握内置客户端、Axios 实例和外部程序认证配置
+- [应用市场](https://docs.halo.run/developer-guide/app-store/index.md): 介绍 Halo 插件与主题在应用市场的发布流程、上架资料准备、首次审核规则、版本制品要求及发布后的应用维护方式。
+- [发布应用](https://docs.halo.run/developer-guide/app-store/publish-app.md): 将 Halo 插件或主题发布到应用市场，涵盖上架资料、应用市场元数据、语义化版本、GitHub Release、开发者入驻、审核、版本维护以及 GitHub Actions 自动同步
+- [应用市场审核指南](https://docs.halo.run/developer-guide/app-store/app-review-guidelines.md): Halo 应用市场插件与主题上架审核规则及提交前自查清单，涵盖安全、性能、商业模式、设计、隐私与知识产权，以及常见拒绝、整改和申诉要求
+- [表单定义与组件速查](https://docs.halo.run/developer-guide/form-schema.md): 面向 Halo 主题、插件和元数据表单的 FormKit Schema 通用速查，介绍 Setting 结构、默认值、数据边界以及扩展输入组件。
+- [元数据表单定义](https://docs.halo.run/developer-guide/annotations-form.md): 介绍 Halo AnnotationSetting 资源与 FormKit Schema 的定义方式，为文章、页面、分类、标签、菜单项和用户配置可编辑的字符串元数据字段。
+- [代码风格](https://docs.halo.run/developer-guide/core/code-style.md): 配置 Halo 项目的 Java 代码风格检查，涵盖安装 CheckStyle-IDEA 插件、导入 checkstyle.xml，并在 IntelliJ IDEA 中启用项目规则。
+- [系统结构](https://docs.halo.run/developer-guide/core/structure.md): 介绍 Halo 服务、管理界面、评论插件和主题项目的系统构成，并说明 Spring Boot 配置目录的覆盖优先级与开发环境自定义配置方式。

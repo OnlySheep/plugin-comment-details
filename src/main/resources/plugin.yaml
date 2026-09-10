@@ -1,0 +1,22 @@
+# Refer https://docs.halo.run/developer-guide/plugin/basics/manifest
+
+apiVersion: plugin.halo.run/v1alpha1
+kind: Plugin
+metadata:
+  # The name defines how the plugin is invoked, A unique name
+  name: comment-details
+spec:
+  enabled: true
+  requires: ">=2.26.0"
+  author:
+    name: onlysheep
+    website: https://github.com/onlysheep
+  logo: logo.png
+  homepage: https://github.com/onlysheep/comment-details#readme
+  repo: https://github.com/onlysheep/comment-details
+  issues: https://github.com/onlysheep/comment-details/issues
+  displayName: "comment-details"
+  description: "comment-details - Halo 插件"
+  license:
+    - name: "GPL-3.0"
+      url: "https://github.com/onlysheep/comment-details/blob/main/LICENSE"
