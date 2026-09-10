@@ -14,11 +14,11 @@ spec:
     name: onlysheep
     website: https://github.com/onlysheep
   logo: logo.png
-  homepage: https://github.com/onlysheep/comment-details#readme
-  repo: https://github.com/onlysheep/comment-details
-  issues: https://github.com/onlysheep/comment-details/issues
+  homepage: https://github.com/onlysheep/plugin-comment-details#readme
+  repo: https://github.com/onlysheep/plugin-comment-details
+  issues: https://github.com/onlysheep/plugin-comment-details/issues
   displayName: "更多评论细节"
   description: "一款可以展示更多评论细节的插件"
   license:
     - name: "GPL-3.0"
-      url: "https://github.com/onlysheep/comment-details/blob/main/LICENSE"
+      url: "https://github.com/onlysheep/plugin-comment-details/blob/main/LICENSE"
