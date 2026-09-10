@@ -35,6 +35,7 @@ haloPlugin {
 dependencies {
     implementation platform('run.halo.tools.platform:plugin:2.26.0')
     compileOnly 'run.halo.app:api'
+    implementation 'org.lionsoul:ip2region:2.7.0'
 
     testImplementation 'run.halo.app:api'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -74,5 +75,4 @@ tasks.register('processUiResources', Copy) {
 tasks.named('classes') {
     dependsOn tasks.named('processUiResources')
 }
-
 

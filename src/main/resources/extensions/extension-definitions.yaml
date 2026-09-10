@@ -1,0 +1,9 @@
+apiVersion: plugin.halo.run/v1alpha1
+kind: ExtensionDefinition
+metadata:
+  name: comment-details-head-processor
+spec:
+  className: com.itsheep.commentdetails.theme.CommentDetailsHeadProcessor
+  extensionPointName: template-head-processor
+  displayName: "评论详情前台资源"
+  description: "在主题页面加载评论 IP 归属地展示脚本"

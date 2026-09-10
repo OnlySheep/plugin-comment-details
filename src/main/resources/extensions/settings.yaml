@@ -1,0 +1,33 @@
+apiVersion: v1alpha1
+kind: Setting
+metadata:
+  name: comment-details-settings
+spec:
+  forms:
+    - group: display
+      label: 展示设置
+      formSchema:
+        - $formkit: switch
+          name: enabled
+          label: 启用评论属地展示
+          value: true
+        - $formkit: select
+          name: locationFormat
+          label: 优先展示层级
+          value: city
+          options:
+            - label: 城市
+              value: city
+            - label: 省份/地区
+              value: region
+            - label: 国家/地区
+              value: country
+        - $formkit: switch
+          name: showOnReplies
+          label: 在回复中显示
+          value: true
+        - $formkit: switch
+          name: showUnknownLocation
+          label: 显示未知归属地
+          value: false
+          help: 无法查询归属地时显示“IP属地：未知”
